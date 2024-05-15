@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiola Sarah Febrianti</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav{
+        height: 8vh;
+        background-color: #486103;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .judul{
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .nav a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .nav a:hover{
+        color: #0febe0;
+    }
+    .navbar {
+        display: flex;
+        gap: 15px;
+    }
+    .home{
+        height: 100vh;
+        background: url("bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .content{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .desk{
+        width: 70vh;
+        text-align: justify;
+        font-size: 1.5rem;
+        color: white;
+        text-align: justify;
+    }
+    .judul1{
+        font-size: 2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+    }
+    .content img{
+        border: white 6px solid;
+        border-radius: 8px;
+    }
+    .desk li{
+        font-size: 1.2rem;
+    }
+    .Pelajari{
+        color: white;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 960px) {
+        .home{
+            height: auto;
+        }
+        .content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .desk {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+
+            .judul1 {
+                font-size: 1.5rem;
+            }
+        }
+    @media screen and (max-width: 659px) {
+        .desk {
+                font-size: 1rem;
+                width: 35vh;
+            }
+            ol,ul{
+                font-size: 0.9rem;
+            }
+
+            .judul1 {
+                font-size: 1.2rem;
+            }
+    }
+
+    .download a{
+        text-decoration: none;
+        color: white;
+    }
+    .download{
+        background-color: #486103;
+        width: 12vh;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        text-align: center;
+        border-radius: 8px;
+    }
+</style>
+<body>
+    <div class="nav">
+        <a href="index.html">AgroEkoTeknologi</a>
+        <div class="navbar">
+            <a href="materi.html"> Materi </a>
+        </div>
+    </div>
+
+    <div class="home">
+            <div>
+                <div class="judul1">Apa itu Agroekoteknologi? </div>
+            </div>
+       
+            <div class="content">
+                <div> 
+                    <img src="./gambar1.jpg" alt="" width="250vh">
+                </div>
+                <div class="desk">
+                    Agroekoteknologi adalah cabang ilmu yang menggabungkan prinsip-prinsip agronomi dan ekologi dengan teknologi modern untuk meningkatkan produksi pertanian secara berkelanjutan. Tujuan utamanya adalah untuk mengembangkan sistem pertanian yang efisien, produktif, dan ramah lingkungan.
+                </div>
+            </div>
+            <div class="content">
+                <div class="desk">
+                    <ol>
+                        <li>Komponen Utama Agroekoteknologi</li>
+                    </ol>
+                    <ul>
+                        <li>Agroekologi: Studi tentang proses ekologi yang diterapkan pada produksi pertanian. Ini mencakup pemahaman tentang interaksi antara tanaman, tanah, air, dan organisme lainnya dalam ekosistem pertanian.</li>
+                        <li>Teknologi Pertanian: Penerapan teknologi modern dalam pertanian, termasuk penggunaan mesin pertanian, bioteknologi, sistem irigasi canggih, dan teknologi informasi.</li>
+                        <li>Sistem Pertanian Berkelanjutan: Praktik-praktik yang memastikan kelestarian lingkungan, ekonomi, dan sosial dalam produksi pertanian. Ini termasuk rotasi tanaman, penggunaan pupuk organik, dan pengelolaan hama terpadu.</li>
+                    </ul>
+                </div>
+                <div> 
+                    <img src="./gambar2.jpg" alt="" width="250vh">
+                </div>
+            </div>
+            <div class="Pelajari">Pelajari Lebih Lanjut : </div>
+            <iframe  style="border-radius: 8px; width: 40vh; height: 30vh;" src="https://www.youtube.com/embed/ecc-5916SJ4?si=K_DbZvnAB-SYFFa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="download"> 
+            <a href="./agro.pdf" download="agro.pdf"> Download </a>
+            </div>
+    </div>
+</body>
+</html>
